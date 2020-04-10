@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}
+.background {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #042358;;
+    z-index: -1;
+}
+.background img {
+    height: 200px;
+    weight: 200px;
+}
+.img1 {
+    position: fixed;
+    top:0;
+    left:0;
+    transform: translate(-1rem, -4rem);
+}
+.img2 {
+    position: fixed;
+    top: 0;
+    right: 0;
+    transform: translateX(6rem);
+}
+.img3 {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translate(-3.5rem, 2.6rem);
+}
+.img4 {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translate(4.5rem, 1.5rem);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    margin: 3rem 0;
+}
+.header a img {
+    height: 40px;
+    
+}
+.form__box {
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: 20px;
+    border-bottom-left-radius: 0;
+    width: 450px;
+}
+form__header {
+    text-align: center;
+}
+.form__header h1 {
+    color: #083e9e;
+    font-weight: 900;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 0.5rem;
+}
+.form__header p{
+    color: #4a5568;
+    font-size: 0.8rem;
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form div {
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #4a5568;
+    margin: 0.5rem;
+}
+form input {
+    padding: 1rem 1rem;
+    background: #edf2f7;
+    color: #1a202c;
+    border-radius: .25rem;
+    display: block;
+    border: none;
+    font-size: 0.9rem;
+}
+form input:focus,
+form select:focus {
+    outline: none;
+}
+.box {
+    position: absolute;
+}
+form select {
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 1rem;
+    font-size: 1rem;
+    background: #edf2f7;
+}
+button {
+    padding: 1.5rem;
+    background: #083e9e;
+    border: none;
+    border-radius: 0.6rem;
+    border-bottom-left-radius: 0;
+    color: #fff;
+    font-weight: bold;
+}
+button:hover {
+    background: #042358;
+}
+.footer {
+    margin: 2rem 0;
+}
+.footer a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
