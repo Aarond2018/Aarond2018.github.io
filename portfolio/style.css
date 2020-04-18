@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+:root {
+    --main-color: #2d2640;
+    --gray-color: #95a9c6;
+    --main-color-dark: #2b272f;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Karla', sans-serif;
+}
+
+.background {
+    background: url("bg3.jpg");
+    background-position: center;
+    background-size: cover;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -50;
+}
+
+.background-overlay{
+    background: rgba(256, 256, 256, 0.7);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: -40;
+}
+.main-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.logo img{
+    height: 3rem;
+}
+.main__nav-item {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main__nav-item li {
+    margin:0 2rem;
+}
+.main__nav-item li a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+.main__nav-item li a:hover,
+.main__nav-item li a:active {
+    border-bottom: 2px solid var(--main-color);
+    margin-bottom: 1rem;
+}
+.main__nav-item--cta {
+    border: 1px solid var(--main-color);
+    padding: 0.8rem;
+    cursor: pointer;
+}
+.main__nav-item--cta:hover,
+.main__nav-item--cta:active {
+    background: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+}
+.main__nav-item--cta a:hover,
+.main__nav-item--cta a:active {
+    background: var(--main-color);
+    color: #fff;
+}
+@media (max-width: 40rem) {
+    .main__nav-item li a{
+        font-size: 0.9rem;
+    }
+    .main__nav-item li {
+        margin:0 1rem;
+    }
+}
+
+@media (max-width: 33rem) {
+    .main__nav-item {
+        display: none;
+    }
+}
+
+
+.home-view {
+    width: 100%;
+    height: 75vh;
+    background: var(--main-color);
+    opacity: 0.85;
+    padding: 2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.home-view__text {
+    width: 50%;
+    color: #fff;
+}
+.home-view__text h3 {
+    font-size: 2rem;
+}
+.home-view__text h1 {
+    font-size: 3rem;
+}
+.home-view__text p {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+}
+.home-view__image {
+    width: 25%;
+    height: 60vh;
+    background: url("dami-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    right: 6rem;
+    position: absolute;
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 40rem) {
+    .home-view {
+        flex-direction: column;
+        height: 110vh;
+
+    }
+    .home-view__image {
+        position: relative;
+        width: 100%;
+        background-position: top;
+        margin: 2rem;
+        right: 0;
+    }
+    .home-view__text {
+        width: 100%;
+    }
+    .home-view__text h3 {
+        font-size: 1.7rem;
+    }
+    .home-view__text h1 {
+        font-size: 2.7rem;
+    }
+    .home-view__text p {
+        font-size: 1.8rem;
+    }
+}
+.icons {
+    margin-top: 2rem;
+}
+.fab,
+.far {
+    margin:0 0.8rem;
+    font-size: 2rem;
+}
+
+.wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin: 3rem 0;
+}
+
+.bio-data {
+    width: 45%;
+}
+.about-me {
+    width: 45%;
+}
+.about-me p {
+    font-size: 1rem;
+}
+.wrapper h2 {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+.wrapper p {
+    text-align: center;
+    font-size: 1.2rem;
+}
+#biodata-section { 
+    border-right: 1px solid var(--main-color);
+}
+@media (max-width: 40rem) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    .bio-data {
+        width: 100%
+    }
+    .about-me {
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .about-me p{
+        padding: 0 2rem;;
+    }
+    .wrapper p {
+        margin:1rem 0;
+    }
+    #biodata-section { 
+        border: none;
+        border-bottom: 1px solid var(--main-color);
+        padding-bottom: 2rem;
+    }
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    background: var(--main-color);
+    padding: 3rem;
+    align-items: center;
+    opacity: 0.85;
+}
+.contact-me h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.form-group {
+    margin: 0.6rem;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+@media (max-width: 40rem){
+    .form-group {
+        width: 85%;
+    }
+}
+.form-group input {
+    width: 100%;
+    padding: 0.7rem;
+}
+.form-group textarea {
+    height: 5rem;
+    padding: 0.6rem;
+}
+.button {
+    width: 30%;
+    padding: 0.6rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--main-color);
+    border-radius: 5px;
+}
+.button:hover,
+.button:active {
+    color: #fff;
+    background: var(--main-color);
+    outline: none;
+}
+footer {
+    margin: 1rem auto;
+    text-align: center;
+}
