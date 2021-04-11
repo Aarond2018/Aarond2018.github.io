@@ -102,6 +102,10 @@ body {
 
 }
 
+.main-content img {
+
+}
+
 
 .main-content__input-wrapper:hover {
     box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
@@ -304,5 +308,8 @@ body {
     .footer__utilities ul li a,
     .footer__enquires ul li a {
         font-size: 12px;
+    }
+    .main-content img {
+        width: 12rem;
     }
 }
